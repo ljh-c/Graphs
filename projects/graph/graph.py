@@ -170,7 +170,7 @@ class Graph:
         visited = set() if not visit_set else visit_set
         path = [] if not prev_path else prev_path
         curr_path = path + [starting_vertex]
-        # path += does not work
+        # path += [starting_vertex] doesn't work because it is using same path
         
         if starting_vertex == destination_vertex:
             return curr_path

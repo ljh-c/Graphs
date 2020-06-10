@@ -38,6 +38,6 @@ def earliest_ancestor(ancestors, starting_node):
         else:
             return min(gen) if min(gen) != starting_node else -1
 
-test_ancestors = [(1, 3), (2, 3), (3, 6), (5, 6), (5, 7), (4, 5), (4, 8), (8, 9), (11, 8), (10, 1)]
+test_ancestors = [(1, 3), (2, 3), (3, 6), (5, 6), (5, 7), (4, 5), (11, 8), (8, 9), (4, 8), (10, 1)]
 
-print(earliest_ancestor(test_ancestors, 2))
+print(earliest_ancestor(test_ancestors, 8))
