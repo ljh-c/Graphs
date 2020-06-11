@@ -1,5 +1,6 @@
 
 # Note: This Queue class is sub-optimal. Why?
+# Because it's not a deque?
 class Queue():
     def __init__(self):
         self.queue = []
